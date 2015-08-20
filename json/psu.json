@@ -1,0 +1,13 @@
+[
+    {"brand":"Antec","series":"High Current Pro Platinum","platformOEM":"Delta Electronics","power":{"efficiency":2,"wattage":1000,"tier":1}},
+    {"brand":"Be Quiet","series":"Dark Power Pro P10","platformOEM":"FSP","power":{"efficiency":3,"wattage":550,"tier":1}},
+    {"brand":"Be Quiet","series":"Dark Power Pro P10","platformOEM":"FSP","power":{"efficiency":3,"wattage":650,"tier":1}},
+    {"brand":"Be Quiet","series":"Dark Power Pro P10","platformOEM":"FSP","power":{"efficiency":3,"wattage":750,"tier":1}},
+    {"brand":"Be Quiet","series":"Dark Power Pro P10","platformOEM":"Seasonic","power":{"efficiency":2,"wattage":850,"tier":1}},
+    {"brand":"Be Quiet","series":"Dark Power Pro P11","platformOEM":"FSP","power":{"efficiency":2,"wattage":850,"tier":1}},
+    {"brand":"Be Quiet","series":"Dark Power Pro P10","platformOEM":"Seasonic","power":{"efficiency":3,"wattage":1000,"tier":1}},
+    {"brand":"Be Quiet","series":"Dark Power Pro P10","platformOEM":"Seasonic","power":{"efficiency":3,"wattage":1200,"tier":1}},
+    
+    {}
+    
+]
