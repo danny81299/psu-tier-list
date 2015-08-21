@@ -1,62 +1,140 @@
-/* -------------------------
+/* ==========================================================================
+    Theme colors and styles
+    
+	Primary Color: Green
+		500 #4caf50
 
-	Main color: Orange
-		500#FF9800 - Main
-		
-		50#FFF3E0 - Lightest
-		100#FFE0B2
-		200#FFCC80
-		300#FFB74D
-		400#FFA726
-		500#FF9800
-		600#FB8C00
-		700#F57C00
-		800#EF6C00
-		900#E65100 - Darkest
-		A100#FFD180 - wtf is this
-		A200#FFAB40
-		A400#FF9100
-		A700#FF6D0
+		50#e8f5e9
+		100#c8e6c9
+		200#a5d6a7
+		300#81c784
+		400#66bb6a
+		500#4caf50
+		600#43a047
+		700#388e3c
+		800#2e7d32
+		900#1b5e20
+		a100#b9f6ca
+		a200#69f0ae
+		a400#00e676
+		a700#00c853
 
-	Accent Color: Green
-		500 #4CAF50
+	Accent Color: Amber
+		500 #ffc107
 
-		50#E8F5E9
-		100#C8E6C9
-		200#A5D6A7
-		300#81C784
-		400#66BB6A
-		500#4CAF50
-		600#43A047
-		700#388E3C
-		800#2E7D32
-		900#1B5E20
-		A100#B9F6CA
-		A200#69F0AE
-		A400#00E676
-		A700#00C853
-
-------------------------- */
+		50#fff8e1
+		100#ffecb3
+		200#ffe082
+		300#ffd54f
+		400#ffca28
+		500#ffc107
+		600#ffb300
+		700#ffa000
+		800#ff8f00
+		900#ff6f00
+		a100#ffe57f
+		a200#ffd740
+		a400#ffc400
+		a700#ffab00
+   ========================================================================== */
 
 p {
     margin: 0;
     padding: 0;
+    color: black;
 }
 
+.primary-color-700 p, .primary-color p, .primar-color-500 p {
+	color: white;
+}
+
+.primary-color, .primary-color-500 {
+    background-color: #4caf50;
+}
+
+.primary-color-100 {
+	background-color: #c8e6c9;
+}
+
+.primary-color-700 {
+	background-color: #388e3c;
+}
+
+.accent-color-a, .accent-color-a-500 {
+	background-color: #ffc107;
+}
+
+.accent-color, .accent-color-a200 {
+	background-color: #ffd740;
+}
+
+.accent-color-a100 {
+	background-color: #ffe57f;
+}
+
+.accent-color-a400 {
+	background-color: #ffc107;
+    background-color: #78909c;
+}
+
+/* light bg */
+
+.text-primary-l p {
+	opacity: 0.87;
+}
+
+.text-secondary-l p {
+	opacity: 0.54;
+}
+
+.text-disabled-l p, .text-hint-l p {
+	opacity: 0.38;
+}
+
+.divider-l {
+	opacity: 0.12;
+}
+
+/* dark-bg */
+
+.text-primary-d p {
+	opacity: 1;
+}
+
+.text-secondary-d p {
+	opacity: 0.7;
+}
+
+.text-disabled-d p, .text-hint-d p {
+	opacity: 0.3;
+}
+
+.divider-d {
+	opacity: 0.12;
+}
+/* ==========================================================================
+   General styles
+   ========================================================================== */
+
+.content {
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ==========================================================================
+   Header styles
+   ========================================================================== */
+
 header {
-	background-color: #FF9800;
 	width: 100%;
 	height: 75px;
-    position: fixed;
     margin: 0;
 }
 
 #header-content {
     height: 100%;
-    width: 100%;
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 #header-title {
@@ -65,8 +143,47 @@ header {
 
 #header-title, p {
     font-family: 'Slabo 27px';
+    font-weight: bold;
     font-size: 1.5em;
 }
 
 header, div, p {
 }
+
+/* ==========================================================================
+   Navigation styles
+   ========================================================================== */
+
+nav {
+    width: 100%;
+    height: 50px;
+}
+
+/* ==========================================================================
+   Filter styles
+   ========================================================================== */
+
+#filter {
+    float: left; 
+    width: 25%;
+}
+
+#filter-content {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 100px;
+    border-right: 1px solid rgba(0,0,0,0.12);
+}
+
+/* ==========================================================================
+   Table styles
+   ========================================================================== */
+
+#psu-table {
+    float: right;
+    width: 75%;
+}
+
+/* ==========================================================================
+   Mobile styles
+   ========================================================================== */
