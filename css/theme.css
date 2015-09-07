@@ -37,6 +37,10 @@
 		a400#ffc400
 		a700#ffab00
    ========================================================================== */
+body {
+    background-color: #eee;
+}
+
 
 p {
     margin: 0;
@@ -79,11 +83,11 @@ p {
 
 /* light bg */
 
-.text-primary-l p {
+.text-primary-l p, .psu-table-row {
 	opacity: 0.87;
 }
 
-.text-secondary-l p {
+.text-secondary-l p, {
 	opacity: 0.54;
 }
 
@@ -123,6 +127,26 @@ p {
     margin-right: auto;
 }
 
+div {
+    font-family: 'Open Sans', 'Calibri Light', 'Calibri', 'Helvetica', 'Arial', sans-serif;
+}
+
+.title, .header1, .header2, .header3 {
+    font-family: 'Slabo 27px' !important;
+}
+
+.title p, .title {
+    font-size: 1.5em;
+}
+
+.header1 p, .header1 {
+    font-size: 1.25em;
+}
+
+.header2 p, .header2 {
+    font-size: 1.1em;
+}
+
 /* ==========================================================================
    Header styles
    ========================================================================== */
@@ -142,8 +166,6 @@ header {
 }
 
 #header-title, p {
-    font-family: 'Slabo 27px';
-    font-weight: bold;
     font-size: 1.5em;
 }
 
@@ -156,34 +178,90 @@ header, div, p {
 
 nav {
     width: 100%;
-    height: 50px;
+    height: 100px;
 }
 
 /* ==========================================================================
-   Filter styles
+   Filter and table styles
    ========================================================================== */
 
+#main-content {
+    position: relative;
+    top: -50px;
+}
+
 #filter {
-    float: left; 
+    float: left;
+    height: 100%;
     width: 25%;
+    position: absolute;
 }
 
 #filter-content {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height: 100px;
-    border-right: 1px solid rgba(0,0,0,0.12);
+    margin: 10px 5px 10px 10px;
+    padding: 20px;
+    background-color: white;
+    /*padding-right: 10px;
+    border-right: 1px solid rgba(0,0,0,0.12);*/
+    height: 100%;
 }
-
-/* ==========================================================================
-   Table styles
-   ========================================================================== */
 
 #psu-table {
     float: right;
     width: 75%;
 }
 
+#psu-content {
+    margin: 10px 10px 10px 5px;
+    padding: 20px;
+    background-color: white;
+}
+
+#psu-title {
+    /*font-size: 1.5em;*/
+}
+
+#psu-content-table {
+    width: 100%;
+}
+
+#header-row, .filter-header {
+    font-size: 0.8em;
+    opacity: 0.54;
+}
+
+/* font opacity at text-secondary-l */
+
+.psu-table-row {
+    font-size: 1em;
+}
+
+#psu-content-table tr td, .filter-header {
+    padding: 5px;
+}
+
+/* ==========================================================================
+   Footer styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Other styles
+   ========================================================================== */
+
+#table-filter-divider {
+	float: center;
+}
+
 /* ==========================================================================
    Mobile styles
    ========================================================================== */
+
+/*@media only screen and (max-width: 420px) and (orientation: portrait) {
+
+};*/
+
+@media only screen and (max-width: 740px)/* and (orientation: landscape)*/ {
+    #filter, #psu-content {
+        float: ;
+    }
+};

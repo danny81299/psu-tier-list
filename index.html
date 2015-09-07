@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/theme.css">
 
-        <link href='http://fonts.googleapis.com/css?family=Slabo+13px|Slabo+27px' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Slabo+27px|Roboto+Condensed|Lora:400,400italic,700|Open+Sans:400,400italic,600' rel='stylesheet' type='text/css'>
         
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
@@ -25,38 +25,87 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        
-        <header class="primary-color">
-            <div id="header-content" class="content">
-                <div id="header-title" class="text-primary-l">
-                    <p>Safe PSU</p>
-                </div>
-            </div>
-        </header>
-        
-        <!--<div class="spacing" style="height:75px;"></div>-->
-        
-        <nav class="accent-color-a400">
-            
-        </nav>
-        <div style="background-color:white;" class="content">
-            
-            <aside id="filter">
-                <div id="filter-content">
-                    <div id="filter-title"></div>
-                    <div class="filter-section">
-                        <div class="filter-header"></div>
-                        <div class="filter-options"></div>
+        <div> +
+            <header class="primary-color">
+                <div id="header-content" class="content">
+                    <div id="header-title" class="text-primary-l title">
+                        <p>Safe PSU</p>
                     </div>
                 </div>
-            </aside>
+            </header>
 
-            <section id="psu-table">
-                <div id="psu-content">
-                    Text
-                </div>
-            </section>
-            
+            <!--<div class="spacing" style="height:75px;"></div>-->
+
+            <nav class="accent-color-a400">
+
+            </nav>
+            <div class="content" id="main-content">
+
+                <aside id="filter">
+                    <div id="filter-content">
+                        <div id="filter-title" class="text-primary-d header1">
+                            <p>Filter</p>
+                        </div>
+                        <div class="filter-section">
+                            <div class="filter-header">Brand</div>
+                            <hr>
+                            <div class="filter-options">
+                                <form id="brand">
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <!-- <section id="table-filter-divider">Text</section> -->
+                <section id="psu-table">
+                    <div id="psu-content">
+                        <div id="psu-title" class="text-primary-d header1">
+                            <p>PSUs</p>
+                        </div>
+                        <div id="parts-section">
+                            <table id="psu-content-table">
+                                <tr id="header-row">
+                                    <td>Brand</td>
+                                    <td>Series</td>
+                                    <td>Platform OEM</td>
+                                    <td>Efficiency</td>
+                                    <td>Wattage</td>
+                                    <td>Tier</td>
+                                </tr>
+                                <tr id="divider" style="border-top: 1px solid rgba(0,0,0,0.12);height: 1px;"><td style="padding:0;border-spacing:0" colspan="6"></td></tr>
+                                <tr class="psu-table-row">
+                                    <td>Antec</td>
+                                    <td>High Current Pro Platinum</td>
+                                    <td>Delta Electronics</td>
+                                    <td>Platinum</td>
+                                    <td>1000W</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr class="psu-table-row">
+                                    <td>Be Quiet</td>
+                                    <td>Dark Power Pro P10</td>
+                                    <td>FSP</td>
+                                    <td>Gold</td>
+                                    <td>550W</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr class="psu-table-row last-table-row">
+                                    <td>Be Quiet</td>
+                                    <td>Dark Power Pro P10</td>
+                                    <td>FSP</td>
+                                    <td>Gold</td>
+                                    <td>550W</td>
+                                    <td>1</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <div style="clear:both;"></div>
+
+            </div>
         </div>
         <footer>
             
