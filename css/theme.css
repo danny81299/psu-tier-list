@@ -1,6 +1,6 @@
 /* ==========================================================================
     Theme colors and styles
-    
+
 	Primary Color: Green
 		500 #4caf50
 
@@ -261,7 +261,15 @@ nav {
 };*/
 
 @media only screen and (max-width: 740px)/* and (orientation: landscape)*/ {
-    #filter, #psu-content {
+    #filter, #psu-table {
         float: ;
     }
-};
+    
+    #filter {
+        clear: right; 
+    }
+    
+    body {
+        background-color: blue;
+    }
+}
