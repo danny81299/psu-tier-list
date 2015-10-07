@@ -87,7 +87,7 @@ p {
 	opacity: 0.87;
 }
 
-.text-secondary-l p, {
+.text-secondary-l p {
 	opacity: 0.54;
 }
 
@@ -241,6 +241,10 @@ nav {
     padding: 5px;
 }
 
+.psu-table-row>td:nth-child(3) {
+    /*display: none;*/
+}
+
 /* ==========================================================================
    Footer styles
    ========================================================================== */
@@ -273,7 +277,7 @@ nav {
 
     #filter {
         position: relative;
-        clear: right; 
+        clear: right;
     }
 
     body {
@@ -286,25 +290,31 @@ nav {
         display: none;
     }
     
-    /*.psu-table-row>td {
+    .psu-table-row>td {
         display: block;
+        padding: 0 !important;
     }
     
     .psu-table-row>td:nth-child(1), .psu-table-row>td:nth-child(2) {
         display: inline;
-        padding: 0 !important;
-    }*/
+    }
 
     .psu-table-row>td {
-        display: inline;
-        padding: 0 !important;
+        /*display: inline;
+        padding: 0 !important;*/
     }
-    
+
     .psu-table-row>td:nth-child(3) {
-        display: table-row;
+        /*display: inline;*/
     }
     
     .psu-table-row>td:nth-child(1) {
         font-weight: bold;
     }
+    
+    .psu-table-row>td:nth-child(3), .psu-table-row>td:nth-child(4), .psu-table-row>td:nth-child(5), .psu-table-row>td:nth-child(6) {
+        font-size: 0.8em;
+        opacity: 0.54;
+    }
+    
 }
