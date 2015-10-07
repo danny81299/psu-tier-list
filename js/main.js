@@ -155,4 +155,24 @@ function storeData(data, argsArr) {
     return data;
 }
 
+function inflateTable(data, filterArgs, sortArgs, callback) {
+    //var finishedArray = sortArray(filterArray(data, filterArgs[0], filterArgs[1]), sortArgs[1], sortArgs[2], callback);
+    var finishedArray = ORIGDATA;
+    var table = document.getElementById("psu-content-table");
+    var tableOrigContent = '<tr id="header-row"><td>Brand</td><td>Series</td><td>Platform OEM</td><td>Efficiency</td><td>Wattage</td><td>Tier</td></tr><tr id="divider" style="border-top: 1px solid rgba(0,0,0,0.12);height: 1px;"><td style="padding:0;border-spacing:0" colspan="6"></td></tr>';
+    
+    var tableNewContent = tableOrigContent;
+    
+    ORIGDATA.forEach(function (entry, index) {
+        
+        
+        /*entry.forEach(function (psu, pIndex) {
+            psu.forEach(function () {
+                
+            });
+        });*/
+    });
+}
+
+
 request("json/psu.json", storeData, []);
