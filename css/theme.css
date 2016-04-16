@@ -132,7 +132,7 @@ div {
 }
 
 .title, .header1, .header2, .header3 {
-    font-family: 'Slabo 27px' !important;
+    font-family: 'Slabo 27px', serif !important;
 }
 
 .title p, .title {
